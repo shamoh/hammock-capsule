@@ -53,12 +53,16 @@ java                        -jar target/hammock-capsule-0.1-SNAPSHOT-capsule.jar
 
 Capsule supports different runtime [modes](http://www.capsule.io/user-guide/#modes-platform--and-version-specific-configuration). In the project there are two modes prepared:
 
-1. Run the application in `verbose` logging enabled mode:
+Run the application in `verbose` logging enabled mode:
+
 ```bash
 java -Dcapsule.mode=verbose -jar target/hammock-capsule-0.1-SNAPSHOT-capsule.jar
 ```
-2. Run the application in remote JVM `debug` mode:
+
+Run the application in remote JVM `debug` mode:
+
 ```bash
 java -Dcapsule.mode=debug   -jar target/hammock-capsule-0.1-SNAPSHOT-capsule.jar
 ```
+
 You can now attach your favorite debugger to the application at port `5005`.
