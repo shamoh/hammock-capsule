@@ -13,6 +13,11 @@
         <java.version>1.8</java.version>
         <hammock.version>1.1-SNAPSHOT</hammock.version>
         <slf4j.version>1.7.22</slf4j.version>
+        <junit.version>4.12</junit.version>
+        <arquillian.version>1.1.11.Final</arquillian.version>
+        <arquillian.weld.version>2.0.0.Beta4</arquillian.weld.version>
+        <rest-assured.version>3.0.1</rest-assured.version>
+
         <mainClass>cz.kramolis.tests.hammock.Main</mainClass>
     </properties>
 
@@ -41,6 +46,38 @@
             <groupId>org.slf4j</groupId>
             <artifactId>jul-to-slf4j</artifactId>
             <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <version>${arquillian.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.container</groupId>
+            <artifactId>arquillian-weld-embedded</artifactId>
+            <version>${arquillian.weld.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ws.ament.hammock</groupId>
+            <artifactId>test-arquillian</artifactId>
+            <version>${hammock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

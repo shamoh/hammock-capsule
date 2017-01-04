@@ -28,7 +28,7 @@ curl -vvv http://localhost:8080/hello
 with output:
 
 ```text
-Hello, world!
+Hello, World!
 ```
 
 ## Build Capsule

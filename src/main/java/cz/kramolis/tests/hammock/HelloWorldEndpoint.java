@@ -10,6 +10,6 @@ import javax.ws.rs.core.Response;
 public class HelloWorldEndpoint {
     @GET
     public Response doGet() {
-        return Response.ok("Hello, world!").build();
+        return Response.ok("Hello, World!").build();
     }
 }
